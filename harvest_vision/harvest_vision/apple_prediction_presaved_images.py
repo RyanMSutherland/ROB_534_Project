@@ -70,7 +70,7 @@ class ApplePredictionPreSaved(Node):
         self.declare_parameter("prediction_radius_min", 0.03)
         self.declare_parameter("prediction_radius_max", 0.06)
         self.declare_parameter("prediction_distance_max", 1.0)
-        self.declare_parameter("vision_experiment", "NA")
+        self.declare_parameter("vision_experiment", "a")
         self.model_path = self.get_parameter("prediction_model_path").get_parameter_value().string_value
         self.confidence_thresh = self.get_parameter("prediction_yolo_conf").get_parameter_value().double_value
         self.lower_rad_bound = self.get_parameter("prediction_radius_min").get_parameter_value().double_value
