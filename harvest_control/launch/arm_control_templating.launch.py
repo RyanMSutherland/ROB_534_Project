@@ -81,7 +81,7 @@ def generate_launch_description():
         Node(
             package='harvest_control',
             executable='generate_trellis_collision_obj.py',
-            name='tree_scene_node',
+            name='update_trellis_position',
             parameters=[
                     {"leader_branch_radii": LaunchConfiguration("leader_branch_radii"),
                      "leader_branch_len": LaunchConfiguration("leader_branch_len"),
