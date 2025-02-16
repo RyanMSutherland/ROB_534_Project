@@ -15,6 +15,7 @@ from geometry_msgs.msg import TransformStamped
 from moveit_msgs.srv import GetPlanningScene
 from moveit_msgs.msg import PlanningSceneComponents
 from rcl_interfaces.srv import GetParameters
+import time
 
 # Interfaces
 from harvest_interfaces.srv import ApplePrediction, VoxelGrid, MoveToPose, UpdateTrellisPosition, SendTrajectory, FinalApproachLinear
@@ -412,6 +413,7 @@ class OrchardTemplating(Node):
 
         # Move arm to apple position
         for i, apple in enumerate(apple_coords):
+            start_time = time.time()
             self.get_logger().info(f'Moving arm to apple ID: {i}')
             result = self.send_pose_goal(apple)
             if result.result:
@@ -424,6 +426,7 @@ class OrchardTemplating(Node):
             else:
                 self.get_logger().warn(f'Apple ID: {i} not reachable')
                 self.unreached_idx_templating.append(i)
+            print(f'Completion time of apple pick: {time.time() - start_time}')
         
         self.get_logger().info(f'Number of apples reached via templating: {self.apples_reached_templating}')
 
@@ -432,51 +435,51 @@ class OrchardTemplating(Node):
         self.remove_tree_from_scene()
 
         ### STAGE 2 - VOXELIZATION
-        self.get_logger().info(f'Starting voxelization method')
-        # Request voxel data from point cloud
-        self.get_logger().info(f'Sending request to extract voxels from point cloud.')
-        voxel_data = self.call_voxel_grid_service()
-        voxel_centers = voxel_data.voxel_centers
-        voxel_colors = voxel_data.voxel_colors
-        voxel_centers = np.array([[point.x, point.y, point.z] for point in voxel_centers])
-        voxel_colors = np.array([[color.r, color.g, color.b, color.a] for color in voxel_colors])
-        self.get_logger().info(f"# of voxels generated: {len(voxel_centers)}")
+        # self.get_logger().info(f'Starting voxelization method')
+        # # Request voxel data from point cloud
+        # self.get_logger().info(f'Sending request to extract voxels from point cloud.')
+        # voxel_data = self.call_voxel_grid_service()
+        # voxel_centers = voxel_data.voxel_centers
+        # voxel_colors = voxel_data.voxel_colors
+        # voxel_centers = np.array([[point.x, point.y, point.z] for point in voxel_centers])
+        # voxel_colors = np.array([[color.r, color.g, color.b, color.a] for color in voxel_colors])
+        # self.get_logger().info(f"# of voxels generated: {len(voxel_centers)}")
 
-        # Find all neighboring point within a sphere around the apple locations
-        neighbor_coords, neighbor_idx = self.get_neighbors(voxel_centers, self.apple_coords, radius=self.voxel_neighbor_radii)
-        self.get_logger().info(f'# of voxels to remove based on apple locations: {len(neighbor_idx)}')
+        # # Find all neighboring point within a sphere around the apple locations
+        # neighbor_coords, neighbor_idx = self.get_neighbors(voxel_centers, self.apple_coords, radius=self.voxel_neighbor_radii)
+        # self.get_logger().info(f'# of voxels to remove based on apple locations: {len(neighbor_idx)}')
 
-        voxel_centers_apple_masked = [voxel_centers[i] for i in range(len(voxel_centers)) if i not in neighbor_idx]
-        voxel_colors_apple_masked = [voxel_colors[i] for i in range(len(voxel_colors)) if i not in neighbor_idx]
-        voxel_centers_removed = [voxel_centers[i] for i in neighbor_idx]
-        voxel_colors_removed = [voxel_colors[i] for i in neighbor_idx]
-        self.get_logger().info(f'# of voxels after apple location removal: {len(voxel_centers_apple_masked)}')
-        self.get_logger().info(f'# of voxels removed: {len(voxel_centers_removed)}')
+        # voxel_centers_apple_masked = [voxel_centers[i] for i in range(len(voxel_centers)) if i not in neighbor_idx]
+        # voxel_colors_apple_masked = [voxel_colors[i] for i in range(len(voxel_colors)) if i not in neighbor_idx]
+        # voxel_centers_removed = [voxel_centers[i] for i in neighbor_idx]
+        # voxel_colors_removed = [voxel_colors[i] for i in neighbor_idx]
+        # self.get_logger().info(f'# of voxels after apple location removal: {len(voxel_centers_apple_masked)}')
+        # self.get_logger().info(f'# of voxels removed: {len(voxel_centers_removed)}')
 
-        self.add_voxels(voxel_centers_apple_masked, voxel_colors_apple_masked)
-        self.add_voxels(voxel_centers_removed)
+        # self.add_voxels(voxel_centers_apple_masked, voxel_colors_apple_masked)
+        # self.add_voxels(voxel_centers_removed)
 
-        # Add voxels as moveit2 collision objects - first convert back to pose message
-        voxel_centers_apple_masked_poses = [Point(x=coord[0], y=coord[1], z=coord[2]) for coord in voxel_centers_apple_masked]
-        self.get_logger().info(f"Publishing {len(voxel_centers_apple_masked_poses)} collision objects to planning scene")
-        self.add_collision_objects(voxel_centers_apple_masked_poses)
+        # # Add voxels as moveit2 collision objects - first convert back to pose message
+        # voxel_centers_apple_masked_poses = [Point(x=coord[0], y=coord[1], z=coord[2]) for coord in voxel_centers_apple_masked]
+        # self.get_logger().info(f"Publishing {len(voxel_centers_apple_masked_poses)} collision objects to planning scene")
+        # self.add_collision_objects(voxel_centers_apple_masked_poses)
 
-        # Move arm to apple position
-        for i, apple in enumerate(apple_coords):
-            self.get_logger().info(f'Moving arm to apple ID: {i}')
-            result = self.send_pose_goal(apple)
-            if result.result:
-                self.get_logger().info(f'Apple ID: {i} reached')
-                self.apples_reached_voxelization += 1
+        # # Move arm to apple position
+        # for i, apple in enumerate(apple_coords):
+        #     self.get_logger().info(f'Moving arm to apple ID: {i}')
+        #     result = self.send_pose_goal(apple)
+        #     if result.result:
+        #         self.get_logger().info(f'Apple ID: {i} reached')
+        #         self.apples_reached_voxelization += 1
 
-                # self.get_logger().info(f'Moving arm to home')
-                # trajectory = result.reverse_traj
-                # self.send_trajectory(trajectory)
-            else:
-                self.get_logger().warn(f'Apple ID: {i} not reachable')
-                self.unreached_idx_voxelization.append(i)
+        #         # self.get_logger().info(f'Moving arm to home')
+        #         # trajectory = result.reverse_traj
+        #         # self.send_trajectory(trajectory)
+        #     else:
+        #         self.get_logger().warn(f'Apple ID: {i} not reachable')
+        #         self.unreached_idx_voxelization.append(i)
 
-        self.get_logger().info(f'Number of apples reached via voxelization: {self.apples_reached_voxelization}')
+        # self.get_logger().info(f'Number of apples reached via voxelization: {self.apples_reached_voxelization}')
 
         ### STAGE 3 - SAVE DATA
         self.save_metadata()

@@ -5,12 +5,18 @@ from harvest_interfaces.srv import ApplePrediction
 
 class PathCreation():
     def __init__(self):
-        self.prediction_client = self.create_client(ApplePrediction, "apple_prediction_presaved_images")
+        self.start_apple_prediction_client = self.create_client(ApplePrediction, "apple_prediction_presaved_images")
         while not self.prediction_client.wait_for_service(timeout_sec = 1.0):
              self.get_logger().info("Prediction service unavailable, waiting...")
 
-    def get_data(self):
-        pass
+        self.future = None
+
+    def start_apple_prediction(self):
+        # Starts servo node
+        self.request = ApplePrediction.Request()
+        self.future = self.start_apple_prediction_client.call_async(self.request)
+        rclpy.spin_until_future_complete(self, self.future) 
+        return self.future.result().apple_poses 
 
     def rrt(self):
         self.req.a = a

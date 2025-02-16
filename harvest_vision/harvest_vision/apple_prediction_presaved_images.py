@@ -24,6 +24,7 @@ import os
 # pointcloud reconstruction
 import open3d as o3d
 from .sphere_ransac import Sphere
+import time
 
 
 class ApplePredictionPreSaved(Node):
@@ -120,6 +121,7 @@ class ApplePredictionPreSaved(Node):
         self.yolo_result = None
 
     def prediction_callback_srv(self, request, response):
+        start_time = time.time()
         # Segment apples and resize masks
         apple_masks = self.segment_apples(self.rgb_image)
         resized_apple_masks = [cv2.resize(mask, self.target_size, interpolation=cv2.INTER_NEAREST) for mask in apple_masks]
@@ -135,7 +137,7 @@ class ApplePredictionPreSaved(Node):
         self.apple_centers = transformed_poses
         self.apple_radii = radii
         self.c2 = 0
-
+        print(f'Time to find all apples: {time.time() - start_time}')
         return response
 
     def segment_apples(self, image):
