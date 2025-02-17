@@ -223,7 +223,7 @@ void MoveArmNode::move_to_pose(const std::shared_ptr<harvest_interfaces::srv::Mo
     // Plan and execute
     rclcpp::Time now = this->get_clock()->now();
     moveit::planning_interface::MoveGroupInterface::Plan goal;
-    std::cout << "Total time to compute path: " << this->get_clock()->now() - now << std::endl;
+    std::cout << "Total time to compute path: " << this->get_clock() - now << std::endl;
 
     if (move_group_.plan(goal))
     {
