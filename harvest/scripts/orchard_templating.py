@@ -324,8 +324,10 @@ class OrchardTemplating(Node):
         # Sends x,y,z to C++ moveit node to execute pose goal since python moveit not available for humble
         self.request = MoveToPose.Request()
         self.request.position = point
+        print("Starting path planning")
         self.future = self.move_arm_to_pose_client.call_async(self.request)
         rclpy.spin_until_future_complete(self, self.future)
+        print("Ending path planning")
         return self.future.result()
     
     def send_trajectory(self, trajectory):
