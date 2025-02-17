@@ -221,6 +221,7 @@ void MoveArmNode::move_to_pose(const std::shared_ptr<harvest_interfaces::srv::Mo
     this->move_group_.setNumPlanningAttempts(1000);
 
     // Plan and execute
+    rclcpp::Clock clock(RCL_SYSTEM_TIME);
     rclcpp::Time time_before = clock.now();
     moveit::planning_interface::MoveGroupInterface::Plan goal;
     rclcpp::Time time_after = clock.now();
