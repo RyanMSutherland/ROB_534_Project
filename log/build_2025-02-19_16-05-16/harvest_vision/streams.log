@@ -1,0 +1,75 @@
+[0.574s] Invoking command in '/home/imml/git/ROB_534_Project/build/harvest_vision': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/build/harvest_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imml/git/ROB_534_Project/install/harvest_vision/lib/python3.10/site-packages:/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imml/git/ROB_534_Project/build/harvest_vision/build --no-deps symlink_data
+[0.834s] running develop
+[1.029s] running egg_info
+[1.030s] creating harvest_vision.egg-info
+[1.030s] writing harvest_vision.egg-info/PKG-INFO
+[1.030s] writing dependency_links to harvest_vision.egg-info/dependency_links.txt
+[1.030s] writing entry points to harvest_vision.egg-info/entry_points.txt
+[1.030s] writing requirements to harvest_vision.egg-info/requires.txt
+[1.030s] writing top-level names to harvest_vision.egg-info/top_level.txt
+[1.030s] writing manifest file 'harvest_vision.egg-info/SOURCES.txt'
+[1.032s] reading manifest file 'harvest_vision.egg-info/SOURCES.txt'
+[1.033s] writing manifest file 'harvest_vision.egg-info/SOURCES.txt'
+[1.034s] running build_ext
+[1.034s] Creating /home/imml/git/ROB_534_Project/install/harvest_vision/lib/python3.10/site-packages/harvest-vision.egg-link (link to .)
+[1.035s] Installing apple_prediction script to /home/imml/git/ROB_534_Project/install/harvest_vision/lib/harvest_vision
+[1.035s] Installing apple_prediction_presaved_images script to /home/imml/git/ROB_534_Project/install/harvest_vision/lib/harvest_vision
+[1.035s] Installing voxelize_scan script to /home/imml/git/ROB_534_Project/install/harvest_vision/lib/harvest_vision
+[1.035s] 
+[1.036s] Installed /home/imml/git/ROB_534_Project/build/harvest_vision
+[1.036s] running symlink_data
+[1.036s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/ament_index
+[1.036s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/ament_index/resource_index
+[1.036s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/ament_index/resource_index/packages
+[1.036s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/resource/harvest_vision -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/ament_index/resource_index/packages
+[1.036s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/package.xml -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision
+[1.036s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/launch
+[1.036s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/yolo_networks
+[1.036s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/yolo_networks/best-merged-apples-thlo-merged-wsu-v8s.pt -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/yolo_networks
+[1.037s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/yolo_networks/best-merged-apples-thlo-merged-wsu-v8m.pt -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/yolo_networks
+[1.037s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/yolo_networks/best-merged-apples-thlo-merged-wsu-v9c.pt -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/yolo_networks
+[1.037s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/yolo_networks/best-merged-apples-thlo-merged-wsu-v8n.pt -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/yolo_networks
+[1.037s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/yolo_networks/best_segmentation.pt -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/yolo_networks
+[1.037s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/yolo_networks/best-merged-apples-thlo-merged-wsu-v8l.pt -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/yolo_networks
+[1.037s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data
+[1.037s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_a
+[1.037s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_a/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_a
+[1.037s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_a/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_a
+[1.038s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_a/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_a
+[1.038s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_b
+[1.038s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_b/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_b
+[1.038s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_b/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_b
+[1.038s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_b/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_b
+[1.038s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_c
+[1.038s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_c/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_c
+[1.038s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_c/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_c
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_c/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_c
+[1.039s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_d
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_d/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_d
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_d/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_d
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_d/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_d
+[1.039s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_e
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_e/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_e
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_e/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_e
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_e/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_e
+[1.039s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_f
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_f/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_f
+[1.039s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_f/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_f
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_f/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_f
+[1.040s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_g
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_g/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_g
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_g/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_g
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_g/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_g
+[1.040s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_h
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_h/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_h
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_h/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_h
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_h/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_h
+[1.040s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_i
+[1.040s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_i/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_i
+[1.041s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_i/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_i
+[1.041s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_i/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_i
+[1.041s] creating /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_j
+[1.041s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_j/depth_to_color.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_j
+[1.041s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_j/pointcloud.ply -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_j
+[1.041s] symbolically linking /home/imml/git/ROB_534_Project/build/harvest_vision/data/prosser_j/color_raw.png -> /home/imml/git/ROB_534_Project/install/harvest_vision/share/harvest_vision/data/prosser_j
+[1.080s] Invoked command in '/home/imml/git/ROB_534_Project/build/harvest_vision' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/build/harvest_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imml/git/ROB_534_Project/install/harvest_vision/lib/python3.10/site-packages:/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imml/git/ROB_534_Project/build/harvest_vision/build --no-deps symlink_data

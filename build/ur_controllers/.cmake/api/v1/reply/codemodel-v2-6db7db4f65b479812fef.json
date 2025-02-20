@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7cac944b89ca655c3853.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ur_controllers",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gpio_controller_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gpio_controller_parameters-dacb87477263f7eee71b.json",
+					"name" : "gpio_controller_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scaled_joint_trajectory_controller_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scaled_joint_trajectory_controller_parameters-ef75853cc1c83090c86e.json",
+					"name" : "scaled_joint_trajectory_controller_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "speed_scaling_state_broadcaster_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-speed_scaling_state_broadcaster_parameters-1c02c480aa7e6e0766ae.json",
+					"name" : "speed_scaling_state_broadcaster_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4a743ba3e3b481028013.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_controllers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_controllers-112497081c2d109d5f53.json",
+					"name" : "ur_controllers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_controllers_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_controllers_uninstall-f6aa6657efbd7244e36d.json",
+					"name" : "ur_controllers_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/imml/git/ROB_534_Project/build/ur_controllers",
+		"source" : "/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

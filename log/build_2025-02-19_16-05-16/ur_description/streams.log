@@ -1,0 +1,199 @@
+[0.015s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/ur_description
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.100s] -- The CXX compiler identification is GNU 11.4.0
+[0.105s] -- Detecting C compiler ABI info
+[0.160s] -- Detecting C compiler ABI info - done
+[0.165s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.165s] -- Detecting C compile features
+[0.166s] -- Detecting C compile features - done
+[0.168s] -- Detecting CXX compiler ABI info
+[0.235s] -- Detecting CXX compiler ABI info - done
+[0.240s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.240s] -- Detecting CXX compile features
+[0.241s] -- Detecting CXX compile features - done
+[0.243s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.361s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.413s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.437s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[2.394s] -- Configuring done
+[2.398s] -- Generating done
+[2.400s] -- Build files have been written to: /home/imml/git/ROB_534_Project/build/ur_description
+[2.407s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/ur_description
+[2.408s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/ur_description -- -j16 -l16
+[2.464s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/ur_description -- -j16 -l16
+[2.476s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/ur_description
+[2.488s] -- Install configuration: ""
+[2.489s] -- Execute custom install script
+[2.490s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/initial_positions.yaml
+[2.504s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/initial_positions_marcus.yaml
+[2.521s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml
+[2.531s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml
+[2.545s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml
+[2.568s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml
+[2.586s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml
+[2.610s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml
+[2.641s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml
+[2.679s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml
+[2.706s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml
+[2.731s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml
+[2.766s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml
+[2.791s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml
+[2.822s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur20/default_kinematics.yaml
+[2.848s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur20/joint_limits.yaml
+[2.874s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur20/physical_parameters.yaml
+[2.902s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur20/visual_parameters.yaml
+[2.930s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml
+[2.956s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml
+[2.994s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml
+[3.023s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml
+[3.059s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur30/default_kinematics.yaml
+[3.091s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur30/joint_limits.yaml
+[3.115s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur30/physical_parameters.yaml
+[3.145s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur30/visual_parameters.yaml
+[3.190s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml
+[3.214s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml
+[3.242s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml
+[3.268s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml
+[3.296s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml
+[3.327s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml
+[3.359s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml
+[3.385s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml
+[3.420s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml
+[3.450s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml
+[3.482s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml
+[3.514s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml
+[3.537s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/launch/view_ur.launch.py
+[3.573s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl
+[3.601s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl
+[3.633s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl
+[3.654s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl
+[3.669s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl
+[3.688s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl
+[3.699s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl
+[3.724s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae
+[3.740s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae
+[3.758s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae
+[3.774s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae
+[3.788s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae
+[3.805s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae
+[3.818s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae
+[3.829s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl
+[3.840s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl
+[3.850s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl
+[3.861s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl
+[3.870s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl
+[3.882s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl
+[3.893s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl
+[3.907s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae
+[3.922s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae
+[3.936s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae
+[3.950s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae
+[3.961s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae
+[3.971s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae
+[3.984s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae
+[3.999s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl
+[4.012s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl
+[4.025s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae
+[4.036s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae
+[4.045s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/LICENSE.txt
+[4.057s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/collision/base.stl
+[4.070s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/collision/forearm.stl
+[4.082s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/collision/shoulder.stl
+[4.094s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/collision/upperarm.stl
+[4.107s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/collision/wrist1.stl
+[4.119s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/collision/wrist2.stl
+[4.133s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/collision/wrist3.stl
+[4.146s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/UR20_DIFF_8bit_2K.png
+[4.159s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/base.dae
+[4.172s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/forearm.dae
+[4.185s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/shoulder.dae
+[4.198s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/upperarm.dae
+[4.210s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/wrist1.dae
+[4.223s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/wrist2.dae
+[4.236s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur20/visual/wrist3.dae
+[4.250s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl
+[4.263s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl
+[4.276s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl
+[4.290s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl
+[4.301s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl
+[4.315s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl
+[4.328s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl
+[4.343s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae
+[4.354s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae
+[4.379s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae
+[4.387s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae
+[4.398s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae
+[4.411s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae
+[4.427s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae
+[4.438s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur30/LICENSE.txt
+[4.452s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur30/collision/forearm.stl
+[4.468s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur30/collision/upperarm.stl
+[4.479s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur30/visual/UR30_DIFF_8bit_2K.png
+[4.494s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur30/visual/forearm.dae
+[4.507s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur30/visual/upperarm.dae
+[4.537s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl
+[4.564s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl
+[4.583s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl
+[4.596s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl
+[4.611s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl
+[4.624s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl
+[4.643s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl
+[4.653s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae
+[4.666s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae
+[4.697s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae
+[4.723s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae
+[4.750s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae
+[4.778s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae
+[4.809s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae
+[4.836s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl
+[4.867s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl
+[4.893s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl
+[4.925s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl
+[4.952s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl
+[5.000s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl
+[5.030s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl
+[5.074s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae
+[5.117s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae
+[5.147s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae
+[5.166s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae
+[5.180s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae
+[5.201s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae
+[5.213s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae
+[5.229s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl
+[5.245s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl
+[5.259s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl
+[5.274s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl
+[5.291s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl
+[5.313s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl
+[5.333s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl
+[5.351s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae
+[5.376s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae
+[5.409s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae
+[5.438s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae
+[5.461s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae
+[5.499s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae
+[5.530s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae
+[5.560s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/rviz/view_robot.rviz
+[5.585s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro
+[5.616s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro
+[5.646s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro
+[5.678s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/urdf/ur.urdf.xacro
+[5.717s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/urdf/ur_macro.xacro
+[5.744s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py
+[5.776s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/test/test_view_ur_launch.py
+[5.819s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description
+[5.848s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description
+[5.883s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/environment/ament_prefix_path.sh
+[5.922s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv
+[5.949s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/environment/path.sh
+[5.977s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/environment/path.dsv
+[6.007s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/local_setup.bash
+[6.036s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/local_setup.sh
+[6.062s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/local_setup.zsh
+[6.088s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/local_setup.dsv
+[6.121s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/package.dsv
+[6.161s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ament_index/resource_index/packages/ur_description
+[6.204s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake
+[6.229s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+[6.261s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/package.xml
+[6.301s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/ur_description

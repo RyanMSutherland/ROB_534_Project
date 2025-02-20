@@ -1,0 +1,114 @@
+[0.024s] Invoking command in '/home/imml/git/ROB_534_Project/build/harvest_control': CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/home/imml/git/ROB_534_Project/install/ur:/home/imml/git/ROB_534_Project/install/ur_calibration:/home/imml/git/ROB_534_Project/install/ur_robot_driver:/home/imml/git/ROB_534_Project/install/ur_moveit_config:/home/imml/git/ROB_534_Project/install/ur_bringup:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/home/imml/git/ROB_534_Project/install/realsense2_description:/home/imml/git/ROB_534_Project/install/realsense2_camera:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs:/home/imml/git/ROB_534_Project/install/harvest_control:/home/imml/git/ROB_534_Project/install/harvest:/home/imml/git/ROB_534_Project/install/ur5e_custom_hardware:/home/imml/git/ROB_534_Project/install/harvest_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:/home/imml/git/ROB_534_Project/install/ur_robot_driver/lib:/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/harvest_control -- -j16 -l16
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target move_arm[0m
+[0.090s] [  0%] Built target ament_cmake_python_symlink_harvest_control
+[0.103s] [ 50%] [32mBuilding CXX object CMakeFiles/move_arm.dir/src/move_arm.cpp.o[0m
+[0.358s] running egg_info
+[0.360s] writing harvest_control.egg-info/PKG-INFO
+[0.360s] writing dependency_links to harvest_control.egg-info/dependency_links.txt
+[0.360s] writing top-level names to harvest_control.egg-info/top_level.txt
+[0.362s] reading manifest file 'harvest_control.egg-info/SOURCES.txt'
+[0.363s] writing manifest file 'harvest_control.egg-info/SOURCES.txt'
+[0.422s] [ 50%] Built target ament_cmake_python_build_harvest_control_egg
+[4.636s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.637s]                  from [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:1[m[K:
+[4.637s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:[m[K In member function ‘[01m[Kvoid MoveArmNode::move_to_pose(std::shared_ptr<harvest_interfaces::srv::MoveToPose_Request_<std::allocator<void> > >, std::shared_ptr<harvest_interfaces::srv::MoveToPose_Response_<std::allocator<void> > >)[m[K’:
+[4.637s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:239:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Krcl_duration_value_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.637s]   239 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"PLANNING DURATION: %2f seconds"[m[K, [32m[Kplanning_duration.nanoseconds()[m[K);
+[4.637s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.637s]       |                                                                                                    [32m[K|[m[K
+[4.637s]       |                                                                                                    [32m[Krcl_duration_value_t {aka long int}[m[K
+[4.637s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:239:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.637s]   239 |     RCLCPP_INFO(this->get_logger(), "PLANNING DURATION: [01;36m[K%2f[m[K seconds", planning_duration.nanoseconds());
+[4.637s]       |                                                         [01;36m[K~~^[m[K
+[4.637s]       |                                                           [01;36m[K|[m[K
+[4.637s]       |                                                           [01;36m[Kdouble[m[K
+[4.637s]       |                                                         [32m[K%2ld[m[K
+[4.638s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.638s]                  from [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:1[m[K:
+[4.638s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:240:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Krcl_duration_value_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.638s]   240 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"EXECUTION DURATION: %2f seconds"[m[K, [32m[Kexecution_duration.nanoseconds()[m[K);
+[4.638s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.638s]       |                                                                                                      [32m[K|[m[K
+[4.638s]       |                                                                                                      [32m[Krcl_duration_value_t {aka long int}[m[K
+[4.638s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:240:60:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.638s]   240 |     RCLCPP_INFO(this->get_logger(), "EXECUTION DURATION: [01;36m[K%2f[m[K seconds", execution_duration.nanoseconds());
+[4.638s]       |                                                          [01;36m[K~~^[m[K
+[4.638s]       |                                                            [01;36m[K|[m[K
+[4.638s]       |                                                            [01;36m[Kdouble[m[K
+[4.638s]       |                                                          [32m[K%2ld[m[K
+[11.993s] [100%] [32m[1mLinking CXX executable move_arm[0m
+[12.699s] [100%] Built target move_arm
+[12.711s] Invoked command in '/home/imml/git/ROB_534_Project/build/harvest_control' returned '0': CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/home/imml/git/ROB_534_Project/install/ur:/home/imml/git/ROB_534_Project/install/ur_calibration:/home/imml/git/ROB_534_Project/install/ur_robot_driver:/home/imml/git/ROB_534_Project/install/ur_moveit_config:/home/imml/git/ROB_534_Project/install/ur_bringup:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/home/imml/git/ROB_534_Project/install/realsense2_description:/home/imml/git/ROB_534_Project/install/realsense2_camera:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs:/home/imml/git/ROB_534_Project/install/harvest_control:/home/imml/git/ROB_534_Project/install/harvest:/home/imml/git/ROB_534_Project/install/ur5e_custom_hardware:/home/imml/git/ROB_534_Project/install/harvest_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:/home/imml/git/ROB_534_Project/install/ur_robot_driver/lib:/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/harvest_control -- -j16 -l16
+[12.712s] Invoking command in '/home/imml/git/ROB_534_Project/build/harvest_control': CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/home/imml/git/ROB_534_Project/install/ur:/home/imml/git/ROB_534_Project/install/ur_calibration:/home/imml/git/ROB_534_Project/install/ur_robot_driver:/home/imml/git/ROB_534_Project/install/ur_moveit_config:/home/imml/git/ROB_534_Project/install/ur_bringup:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/home/imml/git/ROB_534_Project/install/realsense2_description:/home/imml/git/ROB_534_Project/install/realsense2_camera:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs:/home/imml/git/ROB_534_Project/install/harvest_control:/home/imml/git/ROB_534_Project/install/harvest:/home/imml/git/ROB_534_Project/install/ur5e_custom_hardware:/home/imml/git/ROB_534_Project/install/harvest_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:/home/imml/git/ROB_534_Project/install/ur_robot_driver/lib:/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/harvest_control
+[12.720s] -- Install configuration: ""
+[12.721s] -- Execute custom install script
+[12.721s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/pythonpath.sh
+[12.721s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/pythonpath.dsv
+[12.721s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/PKG-INFO
+[12.721s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.721s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/top_level.txt
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control/__init__.py
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/coordinate_to_trajectory.py
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/coordinate_to_trajectory_client.py
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/visual_servo.py
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/event_detector.py
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/force_filter.py
+[12.722s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/heuristic_controller.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/linear_controller.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/pose_listener.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/pressure_averager.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/pull_twist_controller.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/trellis_wire_scan.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/get_manual_apple_locations.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/generate_trellis_collision_obj.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/move_arm
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/launch/arm_control.launch.py
+[12.723s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/launch/arm_control_templating.launch.py
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/harvest_control
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_paths.npy
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_paths_fine.npy
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_voxel_centers.csv
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_voxel_centers_fine.csv
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/tree_wire_mask.json
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/urdf/v_trellis_template.urdf
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/urdf/v_trellis_template.xacro
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/voxel_ik_data.csv
+[12.724s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/voxel_ik_data_fine.csv
+[12.725s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/ament_index/resource_index/package_run_dependencies/harvest_control
+[12.725s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/ament_index/resource_index/parent_prefix_path/harvest_control
+[12.725s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/ament_prefix_path.sh
+[12.725s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/ament_prefix_path.dsv
+[12.725s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/path.sh
+[12.725s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/path.dsv
+[12.725s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.bash
+[12.726s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.sh
+[12.726s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.zsh
+[12.726s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.dsv
+[12.726s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/package.dsv
+[12.736s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/ament_index/resource_index/packages/harvest_control
+[12.737s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/cmake/harvest_controlConfig.cmake
+[12.737s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/cmake/harvest_controlConfig-version.cmake
+[12.737s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/package.xml
+[12.771s] Listing '/home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control'...
+[12.777s] Invoked command in '/home/imml/git/ROB_534_Project/build/harvest_control' returned '0': CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/home/imml/git/ROB_534_Project/install/ur:/home/imml/git/ROB_534_Project/install/ur_calibration:/home/imml/git/ROB_534_Project/install/ur_robot_driver:/home/imml/git/ROB_534_Project/install/ur_moveit_config:/home/imml/git/ROB_534_Project/install/ur_bringup:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/home/imml/git/ROB_534_Project/install/realsense2_description:/home/imml/git/ROB_534_Project/install/realsense2_camera:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs:/home/imml/git/ROB_534_Project/install/harvest_control:/home/imml/git/ROB_534_Project/install/harvest:/home/imml/git/ROB_534_Project/install/ur5e_custom_hardware:/home/imml/git/ROB_534_Project/install/harvest_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:/home/imml/git/ROB_534_Project/install/ur_robot_driver/lib:/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/harvest_control

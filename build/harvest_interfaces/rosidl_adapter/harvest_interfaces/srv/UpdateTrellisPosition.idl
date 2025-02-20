@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from harvest_interfaces/srv/UpdateTrellisPosition.srv
+// generated code does not contain a copyright notice
+
+
+module harvest_interfaces {
+  module srv {
+    struct UpdateTrellisPosition_Request {
+      double x;
+
+      double y;
+
+      double z;
+    };
+    struct UpdateTrellisPosition_Response {
+      boolean success;
+    };
+  };
+};

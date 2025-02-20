@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from harvest_interfaces/srv/FinalApproachLinear.srv
+// generated code does not contain a copyright notice
+
+
+module harvest_interfaces {
+  module srv {
+    struct FinalApproachLinear_Request {
+      double distance;
+    };
+    struct FinalApproachLinear_Response {
+      boolean success;
+    };
+  };
+};

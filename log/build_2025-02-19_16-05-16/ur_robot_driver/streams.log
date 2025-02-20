@@ -1,0 +1,178 @@
+[0.031s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_robot_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/ur_robot_driver
+[0.141s] -- The C compiler identification is GNU 11.4.0
+[0.252s] -- The CXX compiler identification is GNU 11.4.0
+[0.284s] -- Detecting C compiler ABI info
+[0.475s] -- Detecting C compiler ABI info - done
+[0.491s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.491s] -- Detecting C compile features
+[0.497s] -- Detecting C compile features - done
+[0.497s] -- Detecting CXX compiler ABI info
+[0.686s] -- Detecting CXX compiler ABI info - done
+[0.699s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.699s] -- Detecting CXX compile features
+[0.699s] -- Detecting CXX compile features - done
+[0.703s] [0mur_robot_driver: You did not request a specific build type: selecting 'RelWithDebInfo'.[0m
+[0.705s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.039s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.193s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.256s] -- Found controller_manager: 2.48.0 (/opt/ros/humble/share/controller_manager/cmake)
+[1.342s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.350s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.365s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.387s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.720s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.725s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.776s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.900s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.912s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.941s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.946s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.960s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.981s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.996s] -- Looking for pthread.h
+[2.228s] -- Looking for pthread.h - found
+[2.228s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.404s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.406s] -- Found Threads: TRUE  
+[2.508s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[2.510s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[2.522s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.544s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.546s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.547s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.622s] -- Found ur_dashboard_msgs: 2.2.15 (/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake)
+[2.974s] -- Found ur_controllers: 2.2.15 (/home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/cmake)
+[3.072s] -- Found ur_description: 2.1.7 (/home/imml/git/ROB_534_Project/install/ur_description/share/ur_description/cmake)
+[3.075s] -- Found launch_testing_ament_cmake: 1.0.7 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[3.078s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.110s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.118s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.118s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.118s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.118s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.159s] -- Found PythonExtra: .so  
+[3.159s] -- Configuring done
+[3.310s] -- Generating done
+[3.334s] -- Build files have been written to: /home/imml/git/ROB_534_Project/build/ur_robot_driver
+[3.368s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_robot_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/ur_robot_driver
+[3.371s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/ur_robot_driver -- -j16 -l16
+[3.452s] [  6%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/hardware_interface.cpp.o[0m
+[3.452s] [ 13%] [32mBuilding CXX object CMakeFiles/urscript_interface.dir/src/urscript_interface.cpp.o[0m
+[3.454s] [ 26%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/dashboard_client_node.cpp.o[0m
+[3.456s] [ 26%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/dashboard_client_ros.cpp.o[0m
+[3.456s] [ 33%] [32mBuilding CXX object CMakeFiles/controller_stopper_node.dir/src/controller_stopper.cpp.o[0m
+[3.457s] [ 46%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/urcl_log_handler.cpp.o[0m
+[3.457s] [ 46%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/urcl_log_handler.cpp.o[0m
+[3.457s] [ 53%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/dashboard_client_ros.cpp.o[0m
+[3.457s] [ 60%] [32mBuilding CXX object CMakeFiles/controller_stopper_node.dir/src/controller_stopper_node.cpp.o[0m
+[3.457s] [ 66%] [32mBuilding CXX object CMakeFiles/ur_ros2_control_node.dir/src/ur_ros2_control_node.cpp.o[0m
+[3.474s] [ 66%] Built target ament_cmake_python_symlink_ur_robot_driver
+[4.162s] running egg_info
+[4.163s] creating ur_robot_driver.egg-info
+[4.163s] writing ur_robot_driver.egg-info/PKG-INFO
+[4.163s] writing dependency_links to ur_robot_driver.egg-info/dependency_links.txt
+[4.163s] writing top-level names to ur_robot_driver.egg-info/top_level.txt
+[4.164s] writing manifest file 'ur_robot_driver.egg-info/SOURCES.txt'
+[4.178s] reading manifest file 'ur_robot_driver.egg-info/SOURCES.txt'
+[4.178s] writing manifest file 'ur_robot_driver.egg-info/SOURCES.txt'
+[4.182s] In file included from [01m[K/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_robot_driver/src/ur_ros2_control_node.cpp:44[m[K:
+[4.183s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/thread_priority.hpp:39:2:[m[K [01;35m[Kwarning: [m[K#warning "This header include is deprecated. Please update your code to use 'realtime_helpers.hpp' header and link against 'realtime_tools' library." [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[4.183s]    39 | #[01;35m[Kwarning[m[K \
+[4.183s]       |  [01;35m[K^~~~~~~[m[K
+[4.351s] [ 66%] Built target ament_cmake_python_build_ur_robot_driver_egg
+[13.069s] [ 73%] [32m[1mLinking CXX executable ur_ros2_control_node[0m
+[13.415s] [ 73%] Built target ur_ros2_control_node
+[22.426s] [ 80%] [32m[1mLinking CXX executable urscript_interface[0m
+[22.808s] [ 80%] Built target urscript_interface
+[25.639s] [ 86%] [32m[1mLinking CXX executable controller_stopper_node[0m
+[26.016s] [ 86%] Built target controller_stopper_node
+[28.043s] [ 93%] [32m[1mLinking CXX executable dashboard_client[0m
+[28.257s] [100%] [32m[1mLinking CXX shared library libur_robot_driver_plugin.so[0m
+[28.360s] [100%] Built target dashboard_client
+[28.622s] [100%] Built target ur_robot_driver_plugin
+[28.633s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/ur_robot_driver -- -j16 -l16
+[28.635s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/ur_robot_driver
+[28.642s] -- Install configuration: "RelWithDebInfo"
+[28.642s] -- Execute custom install script
+[28.642s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver//hardware_interface_plugin.xml
+[28.651s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/lib/ur_robot_driver/dashboard_client
+[28.660s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/lib/ur_robot_driver/ur_ros2_control_node
+[28.668s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/lib/ur_robot_driver/controller_stopper_node
+[28.676s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/lib/ur_robot_driver/urscript_interface
+[28.685s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/lib/libur_robot_driver_plugin.so
+[28.693s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/controller_stopper.hpp
+[28.702s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/dashboard_client_ros.hpp
+[28.710s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/hardware_interface.hpp
+[28.719s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/urcl_log_handler.hpp
+[28.730s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/library_path.sh
+[28.741s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/library_path.dsv
+[28.751s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/controller_stopper.hpp
+[28.751s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/dashboard_client_ros.hpp
+[28.751s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/hardware_interface.hpp
+[28.751s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_robot_driver/include/ur_robot_driver/urcl_log_handler.hpp
+[28.751s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/pythonpath.sh
+[28.760s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/pythonpath.dsv
+[28.769s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/local/lib/python3.10/dist-packages/ur_robot_driver-2.2.15-py3.10.egg-info/PKG-INFO
+[28.776s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/local/lib/python3.10/dist-packages/ur_robot_driver-2.2.15-py3.10.egg-info/SOURCES.txt
+[28.785s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/local/lib/python3.10/dist-packages/ur_robot_driver-2.2.15-py3.10.egg-info/dependency_links.txt
+[28.794s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/local/lib/python3.10/dist-packages/ur_robot_driver-2.2.15-py3.10.egg-info/top_level.txt
+[28.803s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/local/lib/python3.10/dist-packages/ur_robot_driver/__init__.py
+[28.811s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/lib/ur_robot_driver/tool_communication.py
+[28.819s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/bin/wait_dashboard_server.sh
+[28.827s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/lib/ur_robot_driver/start_ursim.sh
+[28.843s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/test_goal_publishers_config.yaml
+[28.852s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/test_velocity_goal_publishers_config.yaml
+[28.860s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur10_update_rate.yaml
+[28.868s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur10e_update_rate.yaml
+[28.877s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur16e_update_rate.yaml
+[28.886s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur20_update_rate.yaml
+[28.894s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur30_update_rate.yaml
+[28.904s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur3_update_rate.yaml
+[28.912s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur3e_update_rate.yaml
+[28.921s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur5_update_rate.yaml
+[28.929s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur5e_update_rate.yaml
+[28.938s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/config/ur_controllers.yaml
+[28.948s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/test_forward_velocity_controller.launch.py
+[28.957s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/test_joint_trajectory_controller.launch.py
+[28.966s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/test_scaled_joint_trajectory_controller.launch.py
+[28.976s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur10.launch.py
+[28.985s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur10e.launch.py
+[28.995s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur16e.launch.py
+[29.004s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur20.launch.py
+[29.013s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur3.launch.py
+[29.022s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur30.launch.py
+[29.031s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur3e.launch.py
+[29.041s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur5.launch.py
+[29.051s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur5e.launch.py
+[29.060s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur_control.launch.py
+[29.070s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur_control_custom_hw.launch.py
+[29.080s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/launch/ur_dashboard_client.launch.py
+[29.090s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ament_index/resource_index/package_run_dependencies/ur_robot_driver
+[29.100s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ament_index/resource_index/parent_prefix_path/ur_robot_driver
+[29.109s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/ament_prefix_path.sh
+[29.118s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/ament_prefix_path.dsv
+[29.127s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/path.sh
+[29.135s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/environment/path.dsv
+[29.143s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/local_setup.bash
+[29.151s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/local_setup.sh
+[29.160s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/local_setup.zsh
+[29.169s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/local_setup.dsv
+[29.178s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/package.dsv
+[29.188s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ament_index/resource_index/packages/ur_robot_driver
+[29.197s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ur_robot_driver
+[29.206s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.214s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[29.223s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.232s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake
+[29.242s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake
+[29.253s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/package.xml
+[29.265s] -- Installing: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/resources
+[29.266s] -- Installing: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/resources/externalcontrol-1.0.5.urcap
+[29.266s] -- Installing: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/resources/rtde_input_recipe.txt
+[29.266s] -- Installing: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/resources/rtde_output_recipe.txt
+[29.266s] -- Installing: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/resources/ros_control.urscript
+[29.267s] -- Installing: /home/imml/git/ROB_534_Project/install/ur_robot_driver/share/ur_robot_driver/resources/rs485-1.0.urcap
+[29.325s] Listing '/home/imml/git/ROB_534_Project/install/ur_robot_driver/local/lib/python3.10/dist-packages/ur_robot_driver'...
+[29.325s] Compiling '/home/imml/git/ROB_534_Project/install/ur_robot_driver/local/lib/python3.10/dist-packages/ur_robot_driver/__init__.py'...
+[29.333s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/ur_robot_driver

@@ -1,0 +1,130 @@
+[0.011s] Invoking command in '/home/imml/git/ROB_534_Project/build/harvest_control': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/harvest_control
+[0.055s] -- The C compiler identification is GNU 11.4.0
+[0.102s] -- The CXX compiler identification is GNU 11.4.0
+[0.108s] -- Detecting C compiler ABI info
+[0.166s] -- Detecting C compiler ABI info - done
+[0.172s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.172s] -- Detecting C compile features
+[0.172s] -- Detecting C compile features - done
+[0.175s] -- Detecting CXX compiler ABI info
+[0.244s] -- Detecting CXX compiler ABI info - done
+[0.249s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.249s] -- Detecting CXX compile features
+[0.250s] -- Detecting CXX compile features - done
+[0.252s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.390s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.449s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.479s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.519s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.524s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.532s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.543s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.556s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.598s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.601s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.690s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.718s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.759s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.768s] -- Looking for pthread.h
+[0.838s] -- Looking for pthread.h - found
+[0.838s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.910s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.911s] -- Found Threads: TRUE  
+[0.958s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.960s] -- Found moveit_servo: 2.5.8 (/opt/ros/humble/share/moveit_servo/cmake)
+[1.200s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.239s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.330s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.373s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.373s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.529s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.568s] -- Found moveit: 2.5.8 (/opt/ros/humble/share/moveit/cmake)
+[1.571s] -- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.575s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.588s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.607s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.625s] -- Found controller_manager_msgs: 2.48.0 (/opt/ros/humble/share/controller_manager_msgs/cmake)
+[1.636s] -- Found harvest_interfaces: 0.0.0 (/home/imml/git/ROB_534_Project/install/harvest_interfaces/share/harvest_interfaces/cmake)
+[1.727s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.804s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.804s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/imml/git/ROB_534_Project/harvest_control/include>
+[1.804s] -- Configured cppcheck exclude dirs and/or files: 
+[1.805s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.805s] -- Added test 'lint_cmake' to check CMake code style
+[1.806s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.807s] -- Added test 'uncrustify' to check C / C++ code style
+[1.808s] -- Configured uncrustify additional arguments: 
+[1.808s] -- Added test 'xmllint' to check XML markup files
+[1.809s] -- Configuring done
+[1.837s] -- Generating done
+[1.843s] -- Build files have been written to: /home/imml/git/ROB_534_Project/build/harvest_control
+[1.861s] Invoked command in '/home/imml/git/ROB_534_Project/build/harvest_control' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/harvest_control
+[1.863s] Invoking command in '/home/imml/git/ROB_534_Project/build/harvest_control': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/harvest_control -- -j16 -l16
+[1.913s] [ 50%] [32mBuilding CXX object CMakeFiles/move_arm.dir/src/move_arm.cpp.o[0m
+[1.923s] [ 50%] Built target ament_cmake_python_symlink_harvest_control
+[2.191s] running egg_info
+[2.191s] creating harvest_control.egg-info
+[2.192s] writing harvest_control.egg-info/PKG-INFO
+[2.192s] writing dependency_links to harvest_control.egg-info/dependency_links.txt
+[2.192s] writing top-level names to harvest_control.egg-info/top_level.txt
+[2.192s] writing manifest file 'harvest_control.egg-info/SOURCES.txt'
+[2.195s] reading manifest file 'harvest_control.egg-info/SOURCES.txt'
+[2.196s] writing manifest file 'harvest_control.egg-info/SOURCES.txt'
+[2.238s] [ 50%] Built target ament_cmake_python_build_harvest_control_egg
+[33.152s] [100%] [32m[1mLinking CXX executable move_arm[0m
+[35.335s] [100%] Built target move_arm
+[35.356s] Invoked command in '/home/imml/git/ROB_534_Project/build/harvest_control' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/harvest_control -- -j16 -l16
+[35.358s] Invoking command in '/home/imml/git/ROB_534_Project/build/harvest_control': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/harvest_control
+[35.371s] -- Install configuration: ""
+[35.372s] -- Execute custom install script
+[35.372s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/pythonpath.sh
+[35.385s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/pythonpath.dsv
+[35.398s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/PKG-INFO
+[35.411s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/SOURCES.txt
+[35.426s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/dependency_links.txt
+[35.440s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control-0.0.0-py3.10.egg-info/top_level.txt
+[35.455s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control/__init__.py
+[35.473s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/coordinate_to_trajectory.py
+[35.489s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/coordinate_to_trajectory_client.py
+[35.502s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/visual_servo.py
+[35.514s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/event_detector.py
+[35.526s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/force_filter.py
+[35.538s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/heuristic_controller.py
+[35.551s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/linear_controller.py
+[35.563s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/pose_listener.py
+[35.575s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/pressure_averager.py
+[35.586s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/pull_twist_controller.py
+[35.598s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/trellis_wire_scan.py
+[35.610s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/get_manual_apple_locations.py
+[35.621s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/generate_trellis_collision_obj.py
+[35.632s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/lib/harvest_control/move_arm
+[35.644s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/launch/arm_control.launch.py
+[35.658s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/launch/arm_control_templating.launch.py
+[35.672s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/harvest_control
+[35.685s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_paths.npy
+[35.697s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_paths_fine.npy
+[35.709s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_voxel_centers.csv
+[35.720s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/reachable_voxel_centers_fine.csv
+[35.731s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/tree_wire_mask.json
+[35.743s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/urdf/v_trellis_template.urdf
+[35.753s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/urdf/v_trellis_template.xacro
+[35.764s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/voxel_ik_data.csv
+[35.775s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/resource/voxel_ik_data_fine.csv
+[35.786s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/ament_index/resource_index/package_run_dependencies/harvest_control
+[35.797s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/ament_index/resource_index/parent_prefix_path/harvest_control
+[35.808s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/ament_prefix_path.sh
+[35.818s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/ament_prefix_path.dsv
+[35.829s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/path.sh
+[35.840s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/environment/path.dsv
+[35.851s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.bash
+[35.862s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.sh
+[35.874s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.zsh
+[35.885s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/local_setup.dsv
+[35.897s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/package.dsv
+[35.909s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/ament_index/resource_index/packages/harvest_control
+[35.920s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/cmake/harvest_controlConfig.cmake
+[35.931s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/cmake/harvest_controlConfig-version.cmake
+[35.943s] -- Symlinking: /home/imml/git/ROB_534_Project/install/harvest_control/share/harvest_control/package.xml
+[35.989s] Listing '/home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control'...
+[35.989s] Compiling '/home/imml/git/ROB_534_Project/install/harvest_control/local/lib/python3.10/dist-packages/harvest_control/__init__.py'...
+[36.000s] Invoked command in '/home/imml/git/ROB_534_Project/build/harvest_control' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/harvest_control

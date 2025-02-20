@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target move_arm[0m
+[  0%] Built target ament_cmake_python_symlink_harvest_control
+[ 50%] [32mBuilding CXX object CMakeFiles/move_arm.dir/src/move_arm.cpp.o[0m
+running egg_info
+writing harvest_control.egg-info/PKG-INFO
+writing dependency_links to harvest_control.egg-info/dependency_links.txt
+writing top-level names to harvest_control.egg-info/top_level.txt
+reading manifest file 'harvest_control.egg-info/SOURCES.txt'
+writing manifest file 'harvest_control.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_harvest_control_egg

@@ -415,20 +415,18 @@ class OrchardTemplating(Node):
 
         # Move arm to apple position
         for i, apple in enumerate(apple_coords):
-            start_time = time.time()
             self.get_logger().info(f'Moving arm to apple ID: {i}')
             result = self.send_pose_goal(apple)
             if result.result:
                 self.get_logger().info(f'Apple ID: {i} reached')
                 self.apples_reached_templating += 1
 
-                # self.get_logger().info(f'Moving arm to home')
-                # trajectory = result.reverse_traj
-                # self.send_trajectory(trajectory)
+                self.get_logger().info(f'Moving arm to home')
+                trajectory = result.reverse_traj
+                self.send_trajectory(trajectory)
             else:
                 self.get_logger().warn(f'Apple ID: {i} not reachable')
                 self.unreached_idx_templating.append(i)
-            print(f'Completion time of apple pick: {time.time() - start_time}')
         
         self.get_logger().info(f'Number of apples reached via templating: {self.apples_reached_templating}')
 

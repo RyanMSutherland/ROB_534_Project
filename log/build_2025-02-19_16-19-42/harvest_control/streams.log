@@ -1,0 +1,69 @@
+[0.048s] Invoking command in '/home/imml/git/ROB_534_Project/build/harvest_control': CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/home/imml/git/ROB_534_Project/install/ur:/home/imml/git/ROB_534_Project/install/ur_calibration:/home/imml/git/ROB_534_Project/install/ur_robot_driver:/home/imml/git/ROB_534_Project/install/ur_moveit_config:/home/imml/git/ROB_534_Project/install/ur_bringup:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/home/imml/git/ROB_534_Project/install/realsense2_description:/home/imml/git/ROB_534_Project/install/realsense2_camera:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs:/home/imml/git/ROB_534_Project/install/harvest_control:/home/imml/git/ROB_534_Project/install/harvest:/home/imml/git/ROB_534_Project/install/ur5e_custom_hardware:/home/imml/git/ROB_534_Project/install/harvest_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:/home/imml/git/ROB_534_Project/install/ur_robot_driver/lib:/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/harvest_control -- -j16 -l16
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target move_arm[0m
+[0.107s] [  0%] Built target ament_cmake_python_symlink_harvest_control
+[0.117s] [ 50%] [32mBuilding CXX object CMakeFiles/move_arm.dir/src/move_arm.cpp.o[0m
+[0.343s] running egg_info
+[0.344s] writing harvest_control.egg-info/PKG-INFO
+[0.344s] writing dependency_links to harvest_control.egg-info/dependency_links.txt
+[0.345s] writing top-level names to harvest_control.egg-info/top_level.txt
+[0.349s] reading manifest file 'harvest_control.egg-info/SOURCES.txt'
+[0.350s] writing manifest file 'harvest_control.egg-info/SOURCES.txt'
+[0.401s] [ 50%] Built target ament_cmake_python_build_harvest_control_egg
+[4.219s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.219s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.219s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.219s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.219s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.219s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.220s]                  from [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:1[m[K:
+[4.220s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:[m[K In member function ‘[01m[Kvoid MoveArmNode::move_to_pose(std::shared_ptr<harvest_interfaces::srv::MoveToPose_Request_<std::allocator<void> > >, std::shared_ptr<harvest_interfaces::srv::MoveToPose_Response_<std::allocator<void> > >)[m[K’:
+[4.220s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:240:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Krcl_duration_value_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.220s]   240 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"PLANNING DURATION: %2f seconds"[m[K, [32m[Kplanning_duration.nanoseconds()[m[K);
+[4.220s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.220s]       |                                                                                                    [32m[K|[m[K
+[4.220s]       |                                                                                                    [32m[Krcl_duration_value_t {aka long int}[m[K
+[4.220s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:240:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.220s]   240 |     RCLCPP_INFO(this->get_logger(), "PLANNING DURATION: [01;36m[K%2f[m[K seconds", planning_duration.nanoseconds());
+[4.220s]       |                                                         [01;36m[K~~^[m[K
+[4.220s]       |                                                           [01;36m[K|[m[K
+[4.220s]       |                                                           [01;36m[Kdouble[m[K
+[4.220s]       |                                                         [32m[K%2ld[m[K
+[4.220s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.221s]                  from [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:1[m[K:
+[4.221s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:241:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Krcl_duration_value_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.221s]   241 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"EXECUTION DURATION: %2f seconds"[m[K, [32m[Kexecution_duration.nanoseconds()[m[K);
+[4.221s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.221s]       |                                                                                                      [32m[K|[m[K
+[4.221s]       |                                                                                                      [32m[Krcl_duration_value_t {aka long int}[m[K
+[4.221s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:241:60:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.221s]   241 |     RCLCPP_INFO(this->get_logger(), "EXECUTION DURATION: [01;36m[K%2f[m[K seconds", execution_duration.nanoseconds());
+[4.221s]       |                                                          [01;36m[K~~^[m[K
+[4.221s]       |                                                            [01;36m[K|[m[K
+[4.221s]       |                                                            [01;36m[Kdouble[m[K
+[4.221s]       |                                                          [32m[K%2ld[m[K
+[4.221s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:[m[K At global scope:
+[4.221s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:267:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[4.221s]   267 |     [01;31m[Kelse[m[K
+[4.221s]       |     [01;31m[K^~~~[m[K
+[4.222s] [01m[K/home/imml/git/ROB_534_Project/harvest_control/src/move_arm.cpp:272:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[4.222s]   272 | [01;31m[K}[m[K
+[4.222s]       | [01;31m[K^[m[K
+[7.831s] gmake[2]: *** [CMakeFiles/move_arm.dir/build.make:76: CMakeFiles/move_arm.dir/src/move_arm.cpp.o] Error 1
+[7.831s] gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/move_arm.dir/all] Error 2
+[7.832s] gmake: *** [Makefile:146: all] Error 2
+[7.834s] Invoked command in '/home/imml/git/ROB_534_Project/build/harvest_control' returned '2': CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces:/home/imml/git/ROB_534_Project/install/ur:/home/imml/git/ROB_534_Project/install/ur_calibration:/home/imml/git/ROB_534_Project/install/ur_robot_driver:/home/imml/git/ROB_534_Project/install/ur_moveit_config:/home/imml/git/ROB_534_Project/install/ur_bringup:/home/imml/git/ROB_534_Project/install/ur_description:/home/imml/git/ROB_534_Project/install/ur_controllers:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/home/imml/git/ROB_534_Project/install/realsense2_description:/home/imml/git/ROB_534_Project/install/realsense2_camera:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs:/home/imml/git/ROB_534_Project/install/harvest_control:/home/imml/git/ROB_534_Project/install/harvest:/home/imml/git/ROB_534_Project/install/ur5e_custom_hardware:/home/imml/git/ROB_534_Project/install/harvest_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/harvest_interfaces/lib:/home/imml/git/ROB_534_Project/install/ur_robot_driver/lib:/home/imml/git/ROB_534_Project/install/ur_controllers/lib:/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera/lib:/home/imml/git/ROB_534_Project/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/harvest_control -- -j16 -l16

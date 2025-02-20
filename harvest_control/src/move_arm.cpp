@@ -191,7 +191,7 @@ void MoveArmNode::move_to_config(const std::shared_ptr<std_srvs::srv::Trigger::R
 }
 
 void MoveArmNode::move_to_pose(const std::shared_ptr<harvest_interfaces::srv::MoveToPose::Request> request,
-                               const std::shared_ptr<harvest_interfaces::srv::MoveToPose::Response> response)
+    const std::shared_ptr<harvest_interfaces::srv::MoveToPose::Response> response)
 {
     // Set the current state as the start
     this->move_group_.setStartStateToCurrentState();
@@ -208,60 +208,75 @@ void MoveArmNode::move_to_pose(const std::shared_ptr<harvest_interfaces::srv::Mo
 
     // Set pose and joint tolerances
     this->move_group_.setPoseTarget(msg, "gripper_link");
-    // this->move_group_.setGoalOrientationTolerance(0.35);
     this->move_group_.setGoalOrientationTolerance(1.05);
-    // this->move_group_.setGoalJointTolerance(0.001); // Minimize joint changes
-
-    // Use an optimization-aware planner
-    // this->move_group_.setPlannerId("RRTstarkConfigDefault");
     this->move_group_.setPlannerId("RRTConnectkConfigDefault");
-    // this->move_group_.setPlanningTime(20.0);
-    // this->move_group_.setNumPlanningAttempts(50);
     this->move_group_.setPlanningTime(20.0);
     this->move_group_.setNumPlanningAttempts(1000);
 
-    // Plan and execute
+    // Record the time before planning
     rclcpp::Clock clock(RCL_SYSTEM_TIME);
-    rclcpp::Time time_before = clock.now();
+    rclcpp::Time time_before_planning = clock.now();
+
+    // Plan the path
     moveit::planning_interface::MoveGroupInterface::Plan goal;
-    rclcpp::Time time_after = clock.now();
-    rclcpp::Duration duration = time_after - time_before;
-    // RCLCPP_INFO(this->get_logger(), duration.nanoseconds());
-    RCLCPP_INFO(this->get_logger(), "Duration of operation: %ld nanoseconds", duration.nanoseconds());
-    std::cout << "Total time to compute path: " << duration.nanoseconds() << std::endl;
+    bool planning_success = static_cast<bool>(move_group_.plan(goal));
 
-    if (move_group_.plan(goal))
+    // Record the time after planning
+    rclcpp::Time time_after_planning = clock.now();
+    rclcpp::Duration planning_duration = time_after_planning - time_before_planning;
+
+    // Record the time before execution
+    rclcpp::Time time_before_execution = clock.now();
+
+    // Execute the plan if planning was successful
+    if (planning_success)
     {
-        // this->move_group_.execute(goal);
-        response->result = true;
+    move_group_.execute(goal);
 
-        // Save the reverse trajectory as Float32MultiArray
-        std_msgs::msg::Float32MultiArray reverse_traj;
-        reverse_traj.layout.dim.resize(2);
-        reverse_traj.layout.dim[0].label = "waypoints";
-        reverse_traj.layout.dim[0].size = goal.trajectory_.joint_trajectory.points.size();
-        reverse_traj.layout.dim[0].stride = goal.trajectory_.joint_trajectory.points.size() * goal.trajectory_.joint_trajectory.joint_names.size();
-        reverse_traj.layout.dim[1].label = "joints";
-        reverse_traj.layout.dim[1].size = goal.trajectory_.joint_trajectory.joint_names.size();
-        reverse_traj.layout.dim[1].stride = goal.trajectory_.joint_trajectory.joint_names.size();
+    // Record the time after execution
+    rclcpp::Time time_after_execution = clock.now();
+    rclcpp::Duration execution_duration = time_after_execution - time_before_execution;
 
-        
-        for (auto it = goal.trajectory_.joint_trajectory.points.rbegin(); it != goal.trajectory_.joint_trajectory.points.rend(); ++it)
+    RCLCPP_INFO(this->get_logger(), "PLANNING DURATION: %2f seconds", planning_duration.seconds());
+    RCLCPP_INFO(this->get_logger(), "EXECUTION DURATION: %2f seconds", execution_duration.seconds());
+
+    response->result = true;
+
+    // Save the reverse trajectory as Float32MultiArray
+    std_msgs::msg::Float32MultiArray reverse_traj;
+    reverse_traj.layout.dim.resize(2);
+    reverse_traj.layout.dim[0].label = "waypoints";
+    reverse_traj.layout.dim[0].size = goal.trajectory_.joint_trajectory.points.size();
+    reverse_traj.layout.dim[0].stride = goal.trajectory_.joint_trajectory.points.size() * goal.trajectory_.joint_trajectory.joint_names.size();
+    reverse_traj.layout.dim[1].label = "joints";
+    reverse_traj.layout.dim[1].size = goal.trajectory_.joint_trajectory.joint_names.size();
+    reverse_traj.layout.dim[1].stride = goal.trajectory_.joint_trajectory.joint_names.size();
+
+    for (auto it = goal.trajectory_.joint_trajectory.points.rbegin(); it != goal.trajectory_.joint_trajectory.points.rend(); ++it)
+    {
+        for (double position : it->positions)
         {
-            for (double position : it->positions)
-            {
-                reverse_traj.data.push_back(position);
-            }
+        reverse_traj.data.push_back(position);
         }
+    }
 
-        response->reverse_traj = reverse_traj;
+    response->reverse_traj = reverse_traj;
     }
     else
     {
-        RCLCPP_ERROR(this->get_logger(), "Planning failed!");
-        response->result = false;
+    RCLCPP_ERROR(this->get_logger(), "Planning failed!");
+    response->result = false;
     }
 }
+
+
+
+
+
+
+
+
+
 
 // void MoveArmNode::final_approach_linear(const std::shared_ptr<harvest_interfaces::srv::FinalApproachLinear::Request> request,
 //                                         const std::shared_ptr<harvest_interfaces::srv::FinalApproachLinear::Response> response)

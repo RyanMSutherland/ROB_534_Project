@@ -1,0 +1,117 @@
+[0.007s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_controllers': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/ur_controllers
+[0.049s] -- The C compiler identification is GNU 11.4.0
+[0.095s] -- The CXX compiler identification is GNU 11.4.0
+[0.100s] -- Detecting C compiler ABI info
+[0.154s] -- Detecting C compiler ABI info - done
+[0.159s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.159s] -- Detecting C compile features
+[0.159s] -- Detecting C compile features - done
+[0.161s] -- Detecting CXX compiler ABI info
+[0.227s] -- Detecting CXX compiler ABI info - done
+[0.232s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.233s] -- Detecting CXX compile features
+[0.233s] -- Detecting CXX compile features - done
+[0.235s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.356s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.404s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.429s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[0.432s] -- Found controller_interface: 2.48.0 (/opt/ros/humble/share/controller_interface/cmake)
+[0.469s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.474s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.481s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.491s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.505s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.669s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.672s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.693s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.742s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.744s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.757s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.759s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.766s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.775s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.783s] -- Looking for pthread.h
+[0.845s] -- Looking for pthread.h - found
+[0.845s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.909s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.910s] -- Found Threads: TRUE  
+[0.951s] -- Found joint_trajectory_controller: 2.41.0 (/opt/ros/humble/share/joint_trajectory_controller/cmake)
+[1.010s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[1.017s] -- Found ur_dashboard_msgs: 2.2.15 (/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake)
+[1.030s] -- Found ur_msgs: 2.1.0 (/opt/ros/humble/share/ur_msgs/cmake)
+[1.113s] -- Configuring done
+[1.143s] -- Generating done
+[1.148s] -- Build files have been written to: /home/imml/git/ROB_534_Project/build/ur_controllers
+[1.165s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_controllers' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imml/git/ROB_534_Project/install/ur_controllers
+[1.167s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_controllers': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/ur_controllers -- -j16 -l16
+[1.218s] [ 20%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/imml/git/ROB_534_Project/build/ur_controllers/include/ur_controllers/speed_scaling_state_broadcaster_parameters.hpp /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/src/speed_scaling_state_broadcaster_parameters.yaml `[0m
+[1.218s] [ 20%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/imml/git/ROB_534_Project/build/ur_controllers/include/ur_controllers/scaled_joint_trajectory_controller_parameters.hpp /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/src/scaled_joint_trajectory_controller_parameters.yaml `[0m
+[1.219s] [ 30%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/imml/git/ROB_534_Project/build/ur_controllers/include/ur_controllers/gpio_controller_parameters.hpp /home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/src/gpio_controller_parameters.yaml `[0m
+[1.355s] [ 40%] [34m[1mCreating deprecated header file /home/imml/git/ROB_534_Project/build/ur_controllers/include/scaled_joint_trajectory_controller_parameters.hpp[0m
+[1.363s] [ 50%] [34m[1mCreating deprecated header file /home/imml/git/ROB_534_Project/build/ur_controllers/include/speed_scaling_state_broadcaster_parameters.hpp[0m
+[1.363s] [ 60%] [34m[1mCreating deprecated header file /home/imml/git/ROB_534_Project/build/ur_controllers/include/gpio_controller_parameters.hpp[0m
+[1.395s] [ 60%] Built target scaled_joint_trajectory_controller_parameters
+[1.402s] [ 60%] Built target gpio_controller_parameters
+[1.406s] [ 60%] Built target speed_scaling_state_broadcaster_parameters
+[1.427s] [ 90%] [32mBuilding CXX object CMakeFiles/ur_controllers.dir/src/scaled_joint_trajectory_controller.cpp.o[0m
+[1.427s] [ 90%] [32mBuilding CXX object CMakeFiles/ur_controllers.dir/src/speed_scaling_state_broadcaster.cpp.o[0m
+[1.427s] [ 90%] [32mBuilding CXX object CMakeFiles/ur_controllers.dir/src/gpio_controller.cpp.o[0m
+[4.061s] In file included from [01m[K/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/include/ur_controllers/speed_scaling_state_broadcaster.hpp:51[m[K,
+[4.061s]                  from [01m[K/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/src/speed_scaling_state_broadcaster.cpp:38[m[K:
+[4.061s] [01m[K/home/imml/git/ROB_534_Project/build/ur_controllers/include/speed_scaling_state_broadcaster_parameters.hpp:1:179:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "speed_scaling_state_broadcaster_parameters.hpp" is deprecated. Use #include <ur_controllers/speed_scaling_state_broadcaster_parameters.hpp> instead.[m[K’
+[4.061s]     1 | #pragma message("#include \"speed_scaling_state_broadcaster_parameters.hpp\" is deprecated. Use #include <ur_controllers/speed_scaling_state_broadcaster_parameters.hpp> instead."[01;36m[K)[m[K
+[4.061s]       |                                                                                                                                                                                   [01;36m[K^[m[K
+[4.227s] In file included from [01m[K/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/include/ur_controllers/gpio_controller.hpp:59[m[K,
+[4.227s]                  from [01m[K/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/src/gpio_controller.cpp:38[m[K:
+[4.227s] [01m[K/home/imml/git/ROB_534_Project/build/ur_controllers/include/gpio_controller_parameters.hpp:1:147:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "gpio_controller_parameters.hpp" is deprecated. Use #include <ur_controllers/gpio_controller_parameters.hpp> instead.[m[K’
+[4.227s]     1 | #pragma message("#include \"gpio_controller_parameters.hpp\" is deprecated. Use #include <ur_controllers/gpio_controller_parameters.hpp> instead."[01;36m[K)[m[K
+[4.227s]       |                                                                                                                                                   [01;36m[K^[m[K
+[5.039s] In file included from [01m[K/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/include/ur_controllers/scaled_joint_trajectory_controller.hpp:46[m[K,
+[5.039s]                  from [01m[K/home/imml/git/ROB_534_Project/harvest_hardware/Universal_Robots_ROS2_Driver/ur_controllers/src/scaled_joint_trajectory_controller.cpp:41[m[K:
+[5.039s] [01m[K/home/imml/git/ROB_534_Project/build/ur_controllers/include/scaled_joint_trajectory_controller_parameters.hpp:1:185:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "scaled_joint_trajectory_controller_parameters.hpp" is deprecated. Use #include <ur_controllers/scaled_joint_trajectory_controller_parameters.hpp> instead.[m[K’
+[5.039s]     1 | . Use #include <ur_controllers/scaled_joint_trajectory_controller_parameters.hpp> instead."[01;36m[K)[m[K
+[5.039s]       |                                                                                            [01;36m[K^[m[K
+[5.040s] 
+[18.884s] [100%] [32m[1mLinking CXX shared library libur_controllers.so[0m
+[21.506s] [100%] Built target ur_controllers
+[21.534s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_controllers' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/imml/git/ROB_534_Project/build/ur_controllers -- -j16 -l16
+[21.539s] Invoking command in '/home/imml/git/ROB_534_Project/build/ur_controllers': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/ur_controllers
+[21.564s] -- Install configuration: ""
+[21.564s] -- Execute custom install script
+[21.565s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/gpio_controller_parameters.hpp
+[21.582s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/scaled_joint_trajectory_controller_parameters.hpp
+[21.606s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/speed_scaling_state_broadcaster_parameters.hpp
+[21.627s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/gpio_controller_parameters.hpp
+[21.628s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/scaled_joint_trajectory_controller_parameters.hpp
+[21.628s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/speed_scaling_state_broadcaster_parameters.hpp
+[21.628s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/gpio_controller_parameters.hpp
+[21.628s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/scaled_joint_trajectory_controller_parameters.hpp
+[21.629s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/speed_scaling_state_broadcaster_parameters.hpp
+[21.629s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers//controller_plugins.xml
+[21.652s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/lib/libur_controllers.so
+[21.676s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/gpio_controller.hpp
+[21.695s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/scaled_joint_trajectory_controller.hpp
+[21.712s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/include/ur_controllers/speed_scaling_state_broadcaster.hpp
+[21.732s] -- Up-to-date symlink: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/controller_plugins.xml
+[21.732s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/environment/library_path.sh
+[21.754s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/environment/library_path.dsv
+[21.780s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ament_index/resource_index/package_run_dependencies/ur_controllers
+[21.804s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ament_index/resource_index/parent_prefix_path/ur_controllers
+[21.825s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/environment/ament_prefix_path.sh
+[21.846s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/environment/ament_prefix_path.dsv
+[21.865s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/environment/path.sh
+[21.886s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/environment/path.dsv
+[21.908s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/local_setup.bash
+[21.927s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/local_setup.sh
+[21.949s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/local_setup.zsh
+[21.967s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/local_setup.dsv
+[21.986s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/package.dsv
+[22.006s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ament_index/resource_index/packages/ur_controllers
+[22.026s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/ur_controllers
+[22.047s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.066s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.086s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/cmake/ament_cmake_export_libraries-extras.cmake
+[22.106s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/cmake/ur_controllersConfig.cmake
+[22.127s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/cmake/ur_controllersConfig-version.cmake
+[22.146s] -- Symlinking: /home/imml/git/ROB_534_Project/install/ur_controllers/share/ur_controllers/package.xml
+[22.172s] Invoked command in '/home/imml/git/ROB_534_Project/build/ur_controllers' returned '0': AMENT_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imml/git/ROB_534_Project/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/imml/git/ROB_534_Project/build/ur_controllers
